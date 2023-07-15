@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100;500;700&display=swap");
+
+:root {
+  --main-background: #0469ff;
+  --color-buttons: #ff3366;
+  --hover-buttons: #e43c74;
+}
+
+.container {
+  padding: 25px 50px;
+}
+
+.arrow-back {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: var(--main-background);
+  color: white;
+  border: none;
+  cursor: pointer;
+}

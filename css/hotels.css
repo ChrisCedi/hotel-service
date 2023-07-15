@@ -5,10 +5,6 @@
   --color-buttons: #ff3366;
   --hover-buttons: #e43c74;
 }
-body {
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
-}
 
 header {
   padding: 2px 30px;
