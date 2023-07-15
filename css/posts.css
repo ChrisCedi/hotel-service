@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100;500;700&display=swap");
+
+:root {
+  --main-background: #0469ff;
+  --color-buttons: #ff3366;
+  --hover-buttons: #e43c74;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+header {
+  padding: 2px 30px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: white;
+  z-index: 1;
+}
+.link-hotels {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--main-background);
+}
