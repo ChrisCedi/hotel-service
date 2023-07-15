@@ -1,15 +1,6 @@
-const nextView = () => {
-  document.getElementById("section2").scrollIntoView({
-    behavior: "smooth",
-  });
-};
-
-let buttonHome = document.getElementById("next-section-button");
-
-buttonHome.addEventListener("click", nextView);
-
+//funcion fetch
 document.addEventListener("DOMContentLoaded", function () {
-  let listaHoteles = document.getElementById("listaHoteles");
+  let listaHoteles = document.getElementById("hotel-list");
 
   fetch("https://www.cityexpress.com/data/autocomplete.json")
     .then(function (response) {
@@ -20,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let card = document.createElement("div");
         card.classList.add("card");
 
-        let nombre = document.createElement("h2");
+        let nombre = document.createElement("h3");
         nombre.textContent = hotel.label;
         card.appendChild(nombre);
 
@@ -44,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         botonEditar.textContent = "Editar";
         botonEditar.classList.add("edit-button");
         botonEditar.addEventListener("click", function () {
-          // card.remove();
+          alert(`boton para editar: ${hotel.label}`);
         });
         card.appendChild(botonEditar);
 

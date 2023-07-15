@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    href="https://cdn.iconscout.com/icon/free/png-256/free-h-character-alphabet-letter-32852.png"
+  />
     <title>Hoteles</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
       <section class="main-section" id="section1">
@@ -14,7 +19,7 @@
             <img
               src="./images/main-hotel.jpg"
               alt="main-hotel"
-              class="main-hotel"
+              class="main-hotel-image"
             />
           </div>
           <div class="column-title">
@@ -23,18 +28,23 @@
               Descubre nuestros mejores hoteles con todas sus caracteristicas
             </h4>
             <button class="main-button" id="next-section-button">Ver más</button>
+            
           </div>
         </div>
       </section>
       <section class="hotels-section" id="section2">
-        <div class="container">
+        <div class="containers">
           <h1>Lista de hoteles</h1>
           <p>Aquí tienes la lista de hoteles, echale un ojo y si deseas hacer alguna modificación hazlo</p>
-          <div class="hotel-list" id="listaHoteles"></div>
+          <div class="hotel-list" id="hotel-list">
+            <button id="arrow" class="arrow-button"><i class="fas fa-arrow-up"></i></button>
+          </div>
         </div>
+        
       </section>
     </div>
 
     <script src="./js/home.js"></script>
+    <script src="./js/scrollView.js"></script>
   </body>
 </html>
