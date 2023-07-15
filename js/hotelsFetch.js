@@ -1,4 +1,5 @@
 //funcion fetch
+
 document.addEventListener("DOMContentLoaded", function () {
   let listaHoteles = document.getElementById("hotel-list");
 
