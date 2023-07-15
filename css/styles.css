@@ -27,7 +27,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-.container {
+.containers {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,10 +46,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  .main-hotel {
-    height: 80%;
-    width: 80%;
-  }
+}
+
+.main-hotel-image {
+  height: 80%;
+  width: 80%;
 }
 
 .column-title {
@@ -73,14 +74,6 @@ body {
   background-color: var(--hover-buttons);
 }
 
-.card {
-  background-color: wheat;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* hotel section */
 .hotels-section {
   min-height: 100vh;
@@ -89,6 +82,17 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+
+.card {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
 }
 
 .edit-button {
@@ -99,6 +103,8 @@ body {
   border-radius: 36px;
   font-size: 12px;
   cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .delete-button {
@@ -109,10 +115,51 @@ body {
   border-radius: 36px;
   font-size: 12px;
   cursor: pointer;
+  width: 100%;
+}
+
+.arrow-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  padding: 15px;
+  background-color: var(--main-background);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: #023a8e;
+}
+
+/*pantallas medianas*/
+@media (max-width: 1100px) {
+  .hotel-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 800px) {
   .main-container {
     grid-template-columns: 1fr;
+  }
+
+  .hotel-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*pantallas pequeñas*/
+@media (max-width: 530px) {
+  .hotel-list {
+    grid-template-columns: 1fr;
+  }
+
+  .main-hotel-image {
+    height: 100%;
+    margin-top: 30px;
   }
 }
