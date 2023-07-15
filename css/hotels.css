@@ -5,9 +5,22 @@
   --color-buttons: #ff3366;
   --hover-buttons: #e43c74;
 }
-body {
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
+
+header {
+  padding: 2px 30px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: white;
+  z-index: 1;
+}
+.link-posts {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--main-background);
 }
 
 .main-section {
@@ -22,7 +35,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 30px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -31,7 +44,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 40px 20px;
 }
 
 .title {
@@ -77,6 +90,7 @@ body {
 /* hotel section */
 .hotels-section {
   min-height: 100vh;
+  padding-top: 20px;
 }
 
 .hotel-list {
